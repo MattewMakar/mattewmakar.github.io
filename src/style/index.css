@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 :root {
   --primary-background-color-dark: #3a4559;
   --primary-text-color-dark: #ffffff;
   --primary-section-background-color-dark: #0a192f;
   --primary-background-color-light: #dadada;
   --primary-text-color-light: #252550;
-  --primary-section-background-color-light: #F0E7DB;
-
+  --primary-section-background-color-light: #f0e7db;
 }
 
 main > * {
@@ -18,13 +17,16 @@ main > * {
   z-index: 100000;
 }
 
+* {
+  z-index: inherit;
+}
 
 html,
 body,
 #root {
   min-height: 100%;
   min-width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
