@@ -1,0 +1,65 @@
+.company-link,
+.company-link:visited,
+.company-link:active{
+  font-size: small;
+  text-decoration: none;
+}
+.company-link-dark,
+.company-link-dark:visited,
+.company-link-dark:active{
+  color: #49c2a6;
+}
+.company-link-light,
+.company-link-light:visited,
+.company-link-light:active{
+  color: #825af1;
+}
+
+.timeline{
+  color: #909090;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+.title{
+  font-weight: 600;
+}
+.title-dark{
+  color:#a1b8c6;
+
+}
+.title-light{
+  color:#233554;
+
+}
+
+.tab-panel{
+  padding: 2%;
+  position: relative;
+  border-radius: 1%;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10.0024px 30px -15px;
+  animation: sweep 1s ease-in-out;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+.tab-panel-dark{
+  background-color: #233554;
+  color:#a1b8c6;
+}
+.tab-panel-light{
+  background-color: #d5ded6;
+  color:#233554;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -20px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+    position: relative;
+  }
+}

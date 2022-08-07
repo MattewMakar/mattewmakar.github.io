@@ -1,0 +1,133 @@
+.bio {
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  padding: 0 1%;
+  border-radius: 1%;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10.0024px 30px -15px;
+}
+
+.bio-light {
+  background-color: var(--primary-section-background-color-light);
+  padding: 0 1%;
+  border-radius: 1%;
+}
+.bio-dark {
+  background-color: var(--primary-section-background-color-dark);
+  padding: 0 1%;
+  border-radius: 1%;
+}
+button {
+  text-transform: none !important;
+}
+.bio-intro-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.7em;
+  min-height: 70vh;
+  align-items: stretch;
+  text-align: center;
+}
+.bio-intro {
+  flex-basis: 60%;
+  align-self: center;
+  min-height: 100%;
+}
+.bio-intro span {
+  color: #ff63c3;
+  font-weight: 600;
+}
+.bio h2 {
+  color: #58a37e;
+  margin: 5% 0px 1% 0px;
+}
+.bio h4 {
+  color: #5558b5;
+  font-weight: 600;
+}
+
+.socials {
+  padding-bottom: 3px;
+}
+.socials img {
+  border-radius: 50%;
+  height: 70px;
+  width: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10.0024px 30px -15px;
+}
+.socials-list {
+  list-style: none;
+}
+.socials-list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.socials-link-light,
+.socials-link-light:active,
+.socials-link-light:visited {
+  color: var(--primary-text-color-light);
+  padding-left: 10px;
+  text-decoration: none;
+  display: inline;
+}
+.socials-link-dark,
+.socials-link-dark:active,
+.socials-link-dark:visited {
+  color: var(--primary-text-color-dark);
+  padding-left: 10px;
+  margin-bottom: 1%;
+  text-decoration: none;
+  display: inline;
+}
+
+.bio-3d-object {
+  flex-basis: 60%;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 1360px) {
+  .bio {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .bio {
+    width: 85%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .bio {
+    width: 90%;
+    margin: auto;
+    position: relative;
+  }
+  .bio > * {
+    z-index: 1000;
+  }
+  .socials img {
+    height: 50px;
+  }
+  .bio-3d-object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 0.1;
+    flex-basis: 100%;
+    height: 100%;
+    width: 100%;
+  }
+  .bio-intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    align-items: stretch;
+  }
+}

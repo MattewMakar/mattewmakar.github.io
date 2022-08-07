@@ -1,0 +1,25 @@
+.main-grid {
+  height: 100vh;
+}
+.sub-grid {
+  height: 70vh;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10.0024px 30px -15px;
+  border-radius: 1%;
+  padding-top: 2%;
+  background-color: #0a192f;
+}
+.project {
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10.0024px 30px -15px;
+  border-radius: 2%;
+  height: 95%;
+  width:95%;
+  margin: auto;
+}
+.project-dark{
+  background-color: #233554;
+  color:#a1b8c6;
+}
+.project-light{
+  background-color: #d5ded6;
+  color:#233554;
+}
