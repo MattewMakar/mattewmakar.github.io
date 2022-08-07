@@ -1,4 +1,3 @@
-import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "components/Layout";
 import Profile from "pages/Profile";
@@ -9,7 +8,7 @@ import ThemeContextProvider from "context/ThemeContext";
 function App() {
   return (
     <ThemeContextProvider>
-       HashRouter>
+       <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Profile />} />
@@ -17,7 +16,7 @@ function App() {
             <Route path="tech-stack" element={<Technology />} />
           </Route>
         </Routes>
-      < HashRouter>
+      </HashRouter>
     </ThemeContextProvider>
   );
 }
