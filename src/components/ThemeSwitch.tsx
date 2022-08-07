@@ -1,8 +1,9 @@
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
+import { ThemeContext } from "context/ThemeContext";
+import React from "react";
 
-
-const ThemeSwitch = styled(Switch)(({ theme }) => ({
+const CustomSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
   padding: 7,
@@ -48,5 +49,15 @@ const ThemeSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
+const ThemeSwitch: React.FC = () => {
+  const { toggleTheme, theme } = React.useContext(ThemeContext);
 
+  return (
+    <CustomSwitch
+      checked={theme === "dark"}
+      onChange={() => toggleTheme()}
+      onClick={() => toggleTheme()}
+    />
+  );
+};
 export default ThemeSwitch;

@@ -8,7 +8,7 @@ import "style/navbar.css";
 import ThemeSwitch from "components/ThemeSwitch";
 
 const NavBar = () => {
-  const { theme, toggleTheme } = React.useContext(ThemeContext);
+  const { theme } = React.useContext(ThemeContext);
   return (
     <nav className={`nav-${theme}`}>
       <Link to="/">
@@ -20,7 +20,7 @@ const NavBar = () => {
       <Link to="/tech-stack">
         <GiTechnoHeart /> Tech stack
       </Link>
-        <ThemeSwitch onClick={() => toggleTheme()}/>
+        <ThemeSwitch />
     </nav>
   );
 };
