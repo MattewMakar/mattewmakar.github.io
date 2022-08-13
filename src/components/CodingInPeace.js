@@ -5,7 +5,9 @@ import { useSpring, animated } from "@react-spring/three";
 // import { useFrame } from "@react-three/fiber";
 
 const CodingInPeace = () => {
-  const { nodes, materials } = useGLTF("https://mattewmakar.github.io/portfolio.gltf");
+  const { nodes, materials } = useGLTF(
+    "https://mattewmakar.github.io/portfolio.gltf"
+  );
   const animatedGroupProps = useSpring({
     loop: { reverse: true },
     config: { duration: 7000 },
@@ -346,6 +348,12 @@ const CodingInPeace = () => {
                   rotation={[Math.PI / 2, 1.48, -Math.PI / 2]}
                   scale={0.7}
                 >
+                  <mesh
+                    geometry={nodes.Cube001.geometry}
+                    material={materials["Material.070"]}
+                    position={[0, 0, -7.36]}
+                  />
+
                   <mesh
                     geometry={nodes.Rectangle_2004.geometry}
                     material={materials["Material.066"]}
